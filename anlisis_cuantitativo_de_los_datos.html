@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning  - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -48,7 +50,7 @@
       <ul class="other-section">
          <li><a href="trabajo_autnomo.html" class="no-ch">Trabajo Autónomo</a></li>
          <li><a href="fundamentos_de_muestreo.html" class="no-ch">Fundamentos de muestreo</a></li>
-         <li><a href="unidad.html" class="no-ch">Unidad</a></li>
+         <li><a href="actividad_prctica_21.html" class="no-ch">Actividad Práctica 2.1.</a></li>
       </ul>
       </li>
       <li id="active"><a href="anlisis_cuantitativo_de_los_datos.html" class="active no-ch">Análisis cuantitativo de los datos</a></li>
@@ -67,12 +69,85 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="unidad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="anlisis_cualitativo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_prctica_21.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="anlisis_cualitativo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Análisis cuantitativo de los datos</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id25">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Chi Cuadrado y Prueba de Hipótesis</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta25_50_2" class="block iDevice_content">
+<div class="exe-text"><p>Existen dos tipos de análisis estadístico que se pueden realizar a fin de determinar si se cumple una hipótesis o no: análisis paramétricos y análisis no paramétricos. De igual forma, es importante tomar en consideración que dentro de una investigación se puede llevar a cabo análisis paramétricos para algunas hipótesis y no paramétricos para otros hipótesis (<span>Hernández Sampieri, Fernández Collado y Baptista Lucio, 2014) [4].</span> </p>
+<div class="exe-fx exe-accordion">
+<h2>Análisis paramétricos</h2>
+<p>Es importante tomar en cuenta que para aplicar un análisis paramétrico primero se debe partir de lo siguiente (<span>Hernández Sampieri, Fernández Collado y Baptista Lucio, 2014) [4]</span>:</p>
+<ol>
+<li>La distribución poblacional de la variable dependiente es normal</li>
+<li>El nivel de medición de las variables es por intervalos</li>
+<li>Cuando dos o más poblaciones se estudian, tienen una varianza homogénea</li>
+</ol>
+<p>Las pruebas estadísticas paramétricas más empleadas son las que se detallan a continuación (<span>Hernández Sampieri, Fernández Collado y Baptista Lucio, 2014) [4]</span>:</p>
+<ul>
+<li>Coeficiente de correlación de Pearson y regresión lineal</li>
+<li>Prueba <strong><em>t</em></strong> </li>
+<li>Prueba de contraste de la diferencia de proporciones</li>
+<li>Análisis de la varianza unidireccional (ANOVA en un sentido)</li>
+<li>Análisis de la varianza factorial (ANOVA)</li>
+<li>Análisis de covarianza (ANCOVA)</li>
+</ul>
+<p>(<span>Hernández Sampieri, Fernández Collado y Baptista Lucio, 2014) [4]</span>:</p>
+<h2>Análisis no paramétricos</h2>
+<p>La prueba ji-cuadrado <img src="chi-cuadrado.png" alt="Símbolo ji-cuadrado" width="33" height="37" /> es una de las técnicas estadísticas más usadas en la evaluación de datos de conteo o frecuencias, principalmente en los análisis de tablas de contingencia (r x c) donde se resumen datos categóricos (<span>Mendivelso y Rodríguez, 2018)</span>.</p>
+<p>Por ello, en esta sección se estudiará dicha prueba y cómo se debe aplicarla.</p>
+<p>La ji-cuadrado es una prueba no paramétrica que permite determinar el nivel de discrepancia que existe entre una distribución de frecuencias observadas y una distribución de frecuencias esperadas. Esta prueba toma valores positivos entre 0 e infinito, dado que trabaja con la suma de valores elevados al cuadrado. Es importante destacar que ji-cuadrado tiene tres aplicaciones de interés (<span>Mendivelso y Rodríguez, 2018):</span></p>
+<ul>
+<li><span>Prueba de bondad de ajuste (una sola variable)</span></li>
+<li><span>Prueba de independencia (dos variables)</span></li>
+<li><span>Prueba de homogeneidad (dos variables)</span></li>
+</ul>
+<p><span>En esta sección emplearemos esta prueba para determinar si existe o no independencia entre dos variables. Es importante observar que analizaremos <span style="color: #0000ff;"><strong>variables cualitativas</strong></span> con esta prueba. Para ello, se determinará la diferencia de frecuencias cuando se clasifica una muestra "n" por un atributo "A" y luego se clasifica nuevamente "A" por un segundo atributo "B" (Mendivelso y Rodríguez, 2018).</span></p>
+<p><strong><span style="color: #0000ff;">Supuestos:</span></strong></p>
+<ul>
+<li><span></span>Se supone que los datos provienen de una muestra aleatoria extraída de la población de interés.</li>
+<li>La muestra debe ser lo suficientemente grande.</li>
+</ul>
+<p><strong><span style="color: #0000ff;">Hipótesis:</span></strong></p>
+<p>Ho: No existe asociación entre las variables A y B (son independientes)</p>
+<p>H1: Sí existe asociación entre las variables A y B (no son independientes)</p>
+<p><strong><span style="color: #0000ff;">Prueba estadística:</span></strong></p>
+<p style="text-align: center;"><img src="formula-chi-cuadrado.png" alt="Fórmula para calcular ji-cuadrado" width="365" height="123" /></p>
+<p>Donde Oi son las frecuencias observadas y Ei las frecuencias esperadas.</p>
+<p><strong><span style="color: #0000ff;">Distribución de la prueba estadística:</span></strong></p>
+<p>Cuando Ho es verdadera, sigue una distribución ji-cuadrada con <img src="filasporcol-chi.png" alt="Filas por columnas fórmula grados libertad" width="217" height="33" /> grados de libertad (multiplicación del filas menos 1 por columnas menos 1). Para que se cumpla esto, la siguiente expresión debe ser verdadera:</p>
+<p style="text-align: center;"><img src="acepta-ho.png" alt="Cuando se acepta la Hipótesis Nula" width="390" height="91" /></p>
+<p style="text-align: justify;">Donde α representa el nivel de significancia.</p>
+<p><strong><span style="color: #0000ff;">Limitaciones:</span></strong></p>
+<p>La muestra debe ser lo suficientemente grande. Si menos del 20% de las celdas de la tabla de contingencia, presentan valores esperados ≤5 no se recomienda aplicar la prueba ji-cuadrado y optar por la alternativa del test exacto de Fisher <span> (Mendivelso y Rodríguez, 2018).</span></p>
+<p><span>En el siguiente enlace se puede encontrar la tabla de valores críticos de la Distribución Ji-Cuadrada: <a href="http://www.mat.uda.cl/hsalinas/cursos/2010/eyp2/Tabla%20Chi-Cuadrado.pdf" target="_blank" rel="noopener">Enlace</a></span></p>
+<p><span><strong><span style="color: #0000ff;">Pasos para aplicar la prueba:</span></strong></span></p>
+<ol>
+<li>Defina la hipótesis de trabajo</li>
+<li>Defina el nivel de significancia para la prueba estadística</li>
+<li>Calcule los grados de libertad (gl) para la prueba (r= # filas, c= # columnas)</li>
+<li>Establezca el valor de critico (rechazo) de la Ho para la distribución ji-cuadrada</li>
+<li>Calcule el valor para el estadístico de contraste (ji-cuadrado para los datos dados)</li>
+<li>Valide el supuesto de que menos del 20% de las celdas en la tabla tiene valores esperados ≤5.</li>
+<li>Calcule el valor de ji-cuadrado para el ejemplo usando la formula descrita inicialmente</li>
+<li>Regla de decisión</li>
+</ol>
+<h2>Comparación de medias</h2>
+<p>.</p>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
@@ -80,7 +155,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="unidad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="anlisis_cualitativo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_prctica_21.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="anlisis_cualitativo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
